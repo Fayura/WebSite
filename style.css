@@ -78,6 +78,7 @@ li {
   width: 98vw;
   max-width: var(--width);
   min-height: 100vh;
+  flex: 100vh;
   margin: 5vh 0;
   display: flex;
   flex-direction: column;
