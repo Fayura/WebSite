@@ -1,0 +1,36 @@
+@media (max-width: 1500px) {
+  * {
+    font-size: 1.1rem;
+  }
+  :root {
+    --width: 1500px;
+  }
+}
+@media (max-width: 1200px) {
+  * {
+    font-size: 1rem;
+  }
+  :root {
+    --width: 1200px;
+  }
+}
+@media (max-width: 900px) {
+  * {
+    font-size: 0.9rem;
+  }
+  :root {
+    --width: 900px;
+  }
+}
+@media (max-width: 600px) {
+  .projects {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  * {
+    font-size: 0.8rem;
+  }
+  :root {
+    --width: 600px;
+  }
+}

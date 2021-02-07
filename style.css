@@ -6,11 +6,9 @@
   color: #fdfdfdfd;
   /* border: solid red 2px; */
 }
-h1 {
-  text-transform: uppercase;
-  font-size: 3rem;
+:root {
+  --width: 1200px;
 }
-
 body {
   background: url(assets/tron-light-cycle.png);
   background-size: cover;
@@ -19,9 +17,28 @@ body {
   flex-direction: column;
   align-items: center;
 }
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+body::-webkit-scrollbar-thumb {
+  background: #78e2de;
+  border-radius: 50px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
 header {
   max-height: 10vh;
-  width: 80vw;
+  width: 98vw;
+  max-width: var(--width);
   display: flex;
   flex-direction: row;
   background-color: #1a1a1a;
@@ -56,9 +73,11 @@ li {
 }
 .projects,
 .join-us {
+  padding: 5vh 0;
   background-color: #1a1a1a;
-  width: 80vw;
-  height: 100vh;
+  width: 98vw;
+  max-width: var(--width);
+  min-height: 100vh;
   margin: 5vh 0;
   display: flex;
   flex-direction: column;
@@ -81,7 +100,8 @@ li {
 }
 footer {
   min-height: 10vh;
-  width: 80vw;
+  width: 98vw;
+  max-width: var(--width);
   display: flex;
   background-color: #1a1a1a;
   flex-direction: column;
