@@ -9,6 +9,9 @@
 :root {
   --width: 1200px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: url(assets/tron-light-cycle.png);
   background-size: cover;
@@ -51,6 +54,7 @@ nav {
 }
 .logo {
   margin: -1vh 0;
+  /* animation: shrink 1000ms forwards; */
 }
 a {
   text-decoration: none;
@@ -107,4 +111,24 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+@keyframes shrink {
+  0% {
+    transform: translate(34vw, 45vh) scale(7);
+    background-color: #1a1a1a;
+  }
+  60% {
+    transform: translate(34vw, 45vh) scale(7);
+    background-color: #1a1a1a00;
+  }
+  80% {
+    transform: translate(34vw, 45vh) scale(1);
+  }
+  90% {
+    transform: translate(0, 45vh);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
